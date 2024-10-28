@@ -1,0 +1,49 @@
+.mobile-menu {
+    display: none;
+    background-color: #333;
+    
+    .menu-toggle {
+      background: #444;
+      color: white;
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+    }
+    
+    .menu-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  
+      li {
+        border-bottom: 1px solid #555;
+  
+        a {
+          color: white;
+          display: block;
+          padding: 10px;
+          text-decoration: none;
+  
+          &:hover {
+            background-color: #555;
+          }
+        }
+  
+        .submenu {
+          display: none;
+          background-color: #444;
+          
+          li {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
